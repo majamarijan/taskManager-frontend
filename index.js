@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
-const {run}= require('./db/database.js');
+//const {run}= require('./db/database.js');
 const root = require('./path.js');
-const taskRouter = require('./routes/taskRoute.js');
+//const taskRouter = require('./routes/taskRoute.js');
 const cors = require('cors');
 
 
 //app.use(cors);
 app.use(express.static(root));
 app.use(express.json())
-app.use('/tasks', taskRouter);
+//app.use('/tasks', taskRouter);
 
 app.get('/', (req,res,next)=> {
 		res.sendFile('index.html', {root: root}, (err)=> {
@@ -30,16 +30,16 @@ app.use((req,res,next)=> {
 });
 
 
-run((err)=> {
-	if(err) {
-		console.log('Server cannot start')
-		process.exit();
-	}else {
+//run((err)=> {
+//	if(err) {
+	//	console.log('Server cannot start')
+	//	process.exit();
+//	}else {
 		app.listen(5000, ()=> {
 			console.log(' --|+|-- connected')
 			console.log('Server is running...')
 		});
-	}
-})
+//	}
+//})
 
 
