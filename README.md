@@ -1,6 +1,6 @@
 # taskManager-frontend
 
-Example of the frontend that will implement project  https://github.com/majamarijan/taskManager-MongoDB 
+Starter example of the frontend that will implement the project  https://github.com/majamarijan/taskManager-MongoDB 
 
 Description:
 - responsive layout (mobile view and desktop)
