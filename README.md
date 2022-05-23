@@ -3,7 +3,7 @@
 Example of the frontend that will implement project  https://github.com/majamarijan/taskManager-MongoDB 
 
 Description:
-- responsive layout (modile view and desktop)
+- responsive layout (mobile view and desktop)
 - localStorage API
 - HTTP-API avatar https://avatars.dicebear.com/docs/http-api
 - Quill API - Rich text editor - https://quilljs.com/
